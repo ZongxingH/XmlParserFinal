@@ -1,0 +1,31 @@
+<assembly>
+    <id>stdalone</id>
+    <formats>
+        <format>jar</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <!--<dependencySets>-->
+        <!--<dependencySet>-->
+            <!--<unpack>false</unpack>-->
+            <!--<scope>runtime</scope>-->
+            <!--<outputDirectory>/WEB-INF/lib</outputDirectory>-->
+            <!--<includes>-->
+                <!--<include>com.sinovate.resdivision.comms.cptcore:ngrms-cptcore</include>-->
+                <!--<include>com.sinovate.res-ngrms:usi.ngc1cp.commsvr</include>-->
+                <!--<include>com.sinovate.res-ngrms:usi.ngc1cp.frmcpt</include>-->
+                <!--<include>com.sinovate.res-ngrms:usi.ngc2da.bscsvr</include>-->
+            <!--</includes>-->
+        <!--</dependencySet>-->
+    <!--</dependencySets>-->
+    <fileSets>
+        <fileSet>
+            <directory>${basedir}/src/build/main/</directory>
+            <outputDirectory>/</outputDirectory>
+
+        </fileSet>
+        <fileSet>
+            <directory>./target/classes/</directory>
+            <outputDirectory>/WEB-INF/classes</outputDirectory>
+        </fileSet>
+    </fileSets>
+</assembly>
